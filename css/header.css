@@ -1,0 +1,76 @@
+/*-------- HEADER ---------*/
+header {
+  background-color: #8dd0f9;
+  border-radius: 4px;
+  padding: 4px 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+audio {
+  height: 40px;
+}
+
+.header-title-container,
+.header-btn-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-logo {
+  /* font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em; */
+  color: #1c4588;
+}
+
+.header-span {
+  text-transform: uppercase;
+}
+.header-span:hover {
+  color: yellow;
+}
+
+.header-title {
+  color: #2659b0;
+  /* font-size: 20px; */
+}
+
+.header-btn {
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header-btn:hover {
+  color: yellow;
+}
+
+/********   tablet   *******/
+@media only screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/*********  desktop  ********/
+/* @media only screen and (min-width: 1100px) {
+  .header-logo,
+  .header-title {
+    font-size: 30px;
+  }
+  .btn {
+    height: 50px;
+    width: 200px;
+    font-size: 26px;
+  }
+} */
