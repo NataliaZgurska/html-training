@@ -6,6 +6,7 @@
     <title>HTML training</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/styles0.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -33,13 +34,109 @@
     </header>
 
     <main>
-      <a href="page1.html" title="Page1">
-        <p>Page1</p>
-      </a>
-      <h1>HTML training</h1>
-      <h2>HTML training</h2>
-      <h3>HTML training</h3>
-      <p>HTML training</p>
+      <section class="responsiveDivsSection">
+        <div class="responsiveDivs">
+          <h2>Responsive divs</h2>
+          <div class="div1">
+            <div class="innerDiv">
+              <h3>Div1</h3>
+              <ul class="linksList">
+                <li class="linksListItem">
+                  <a href="page1.html"><p>First page</p></a>
+                </li>
+                <li class="linksListItem">
+                  <a href="page2svgIframe.html" target="_blank"
+                    ><p>page2 Svg & Iframe</p></a
+                  >
+                </li>
+                <li class="linksListItem">
+                  <a href="" target="_blank"><p>Input Form</p></a>
+                </li>
+                <li class="linksListItem">
+                  <a href="" target="_blank"><p>Audio/video</p></a>
+                </li>
+                <li class="linksListItem">
+                  <a href="" target="_blank"><p>w3css</p></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="div2">
+            <div class="innerDiv innerDiv2">
+              <h3>Div2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat.
+              </p>
+              <img
+                src="/images/bg-mountaines.jpg"
+                alt="Mountaines"
+                style="max-width: 50%; height: auto"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat.
+              </p>
+            </div>
+          </div>
+          <div class="div3">
+            <div class="innerDiv">
+              <h3>Div3</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat.
+              </p>
+              <div class="dropdown">
+                <button class="dropbtn">Dropdawn Menu</button>
+                <div class="dropdown-content">
+                  <a href="page1.html" target="_blank"><p>First page</p></a>
+                  <a href="" target="_blank"><p>Input Form</p></a>
+                </div>
+              </div>
+              <details>
+                <summary>Accordion list</summary>
+                <ul>
+                  <li>
+                    <a href="page1.html" target="_blank"><p>First page</p></a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank"><p>Input Form</p></a>
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="asideDiv">
+        <aside>
+          <p>Aside text</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </aside>
+        <div class="asideDivMainText">
+          <h2>Aside div</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            id cum unde officiis obcaecati corrupti placeat quae explicabo
+            debitis nesciunt neque est reprehenderit, accusamus eaque sunt nisi
+            voluptatem vitae illum?
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h1>HTML training</h1>
+        <h2>HTML training</h2>
+      </section>
+      <section>
+        <h3>HTML training</h3>
+        <p>HTML training</p>
+      </section>
     </main>
 
     <footer>

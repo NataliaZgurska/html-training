@@ -1,0 +1,15 @@
+/***** svg & Iframe *****/
+
+.iframeDiv {
+  margin-top: 10px;
+  border: 2px solid blue;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: white;
+}
+
+iframe {
+  height: 200px;
+  width: 100%;
+  border: none;
+}

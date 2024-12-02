@@ -1,0 +1,137 @@
+/*********** responsiveDivs ********/
+.responsiveDivs {
+  overflow: auto;
+}
+
+.div1,
+.div2,
+.div3 {
+  float: left;
+  width: 100%;
+  padding: 4px;
+}
+
+.innerDiv {
+  background-color: #8dd0f9;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.linksList {
+}
+
+.linksListItem {
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.innerDiv2 {
+  overflow: auto;
+}
+
+.innerDiv2 p,
+.innerDiv2 img {
+  margin-top: 6px;
+  margin-right: 6px;
+}
+.innerDiv2 img {
+  float: left;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/****** dropdawn menu ******/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.dropbtn {
+  height: 50px;
+  min-width: 140px;
+  background-color: #1487bd;
+  border: 1px solid #d4ecff;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  padding: 14px;
+  transition: 500ms;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* 
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #00467d;
+}
+summary {
+  font-size: 16px;
+}
+/******* asideDiv ******/
+.asideDiv {
+  overflow: auto;
+}
+
+aside {
+  font-style: italic;
+  background-color: #8dd0f9;
+  border: 1px solid yellow;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+}
+.asideDivMainText {
+  color: darkslategray;
+  padding: 10px;
+}
+
+/********   tablet-500   *******/
+@media only screen and (min-width: 500px) {
+  .div1 {
+    width: 20%;
+  }
+  .div2 {
+    width: 80%;
+  }
+
+  aside {
+    width: 30%;
+    float: left;
+    border: 1px solid yellow;
+  }
+}
+
+/*********  desktop  ********/
+@media only screen and (min-width: 800px) {
+  .div2 {
+    width: 60%;
+  }
+  .div3 {
+    width: 20%;
+  }
+  summary {
+    font-size: 20px;
+  }
+}

@@ -45,7 +45,6 @@ a:hover {
 a:active {
   color: red;
   text-decoration: none;
-  /* background-color: lightblue; */
 }
 
 /* a:visited {
@@ -82,13 +81,6 @@ body {
   background-color: #d4ecff;
 }
 
-main {
-  flex-grow: 1;
-  width: 100%;
-  min-height: 82vh;
-  margin: 0 auto;
-}
-
 /* footer */
 footer {
   background-color: #8dd0f9;
@@ -96,14 +88,21 @@ footer {
   text-align: center;
   margin-top: 7px;
 }
-/* 
+
+/****** main *****/
+main {
+  flex-grow: 1;
+  width: 100%;
+  min-height: 76vh;
+  margin: 0 auto;
+}
+
 section {
   background-color: #b0ddfe;
   border: 1px solid #6ec3f1;
   border-radius: 4px;
-  box-shadow: 0px 8px 16px 0px #b0ddfe;
-  margin-top: 15px;
-} */
+  margin-top: 10px;
+}
 
 /********* button *********/
 
@@ -131,8 +130,8 @@ section {
   transform: translate(0, 2px);
 }
 
-/********   tablet   *******/
-@media only screen and (min-width: 768px) {
+/********  500   *******/
+@media only screen and (min-width: 500px) {
   h1 {
     font-size: 3.9vw;
   }
@@ -145,14 +144,9 @@ section {
   h3 {
     font-size: 3vw;
   }
-
-  main {
-    min-height: 87vh;
-  }
 }
-
-/*********  desktop  ********/
-@media only screen and (min-width: 1100px) {
+/********   tablet   *******/
+@media only screen and (min-width: 768px) {
   h1 {
     font-size: 2.6vw;
   }
@@ -171,7 +165,29 @@ section {
     width: 200px;
     font-size: 26px;
   }
+
+  main {
+    min-height: 83vh;
+  }
 }
+
+/*********  desktop  ********/
+/* @media only screen and (min-width: 1100px) {
+  h1 {
+    font-size: 2.6vw;
+  }
+
+  h2 {
+    font-size: 2.4vw;
+  }
+
+  p,
+  h3 {
+    font-size: 2vw;
+  }
+
+
+} */
 
 /*********  PC  ********/
 @media only screen and (min-width: 1400px) {
