@@ -37,13 +37,13 @@ a {
 } */
 
 a:hover {
-  color: red;
+  color: blue;
   text-decoration: underline;
   background-color: transparent;
 }
 
 a:active {
-  color: yellow;
+  color: red;
   text-decoration: none;
   /* background-color: lightblue; */
 }
@@ -66,27 +66,33 @@ label {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 5.2vw;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 4.8vw;
 }
 
 p,
 h3 {
-  font-size: 14px;
+  font-size: 4vw;
 }
 
 body {
   background-color: #d4ecff;
 }
 
+main {
+  flex-grow: 1;
+  width: 100%;
+  min-height: 82vh;
+  margin: 0 auto;
+}
+
 /* footer */
 footer {
   background-color: #8dd0f9;
   border-radius: 4px;
-  padding: 15px;
   text-align: center;
   margin-top: 7px;
 }
@@ -128,37 +134,57 @@ section {
 /********   tablet   *******/
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 24px;
+    font-size: 3.9vw;
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 3.6vw;
   }
 
   p,
   h3 {
-    font-size: 18px;
+    font-size: 3vw;
+  }
+
+  main {
+    min-height: 87vh;
   }
 }
 
 /*********  desktop  ********/
 @media only screen and (min-width: 1100px) {
   h1 {
-    font-size: 26px;
+    font-size: 2.6vw;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 2.4vw;
   }
 
   p,
   h3 {
-    font-size: 20px;
+    font-size: 2vw;
   }
 
   .btn {
     height: 50px;
     width: 200px;
     font-size: 26px;
+  }
+}
+
+/*********  PC  ********/
+@media only screen and (min-width: 1400px) {
+  h1 {
+    font-size: 2vw;
+  }
+
+  h2 {
+    font-size: 1.8vw;
+  }
+
+  p,
+  h3 {
+    font-size: 1.6vw;
   }
 }
