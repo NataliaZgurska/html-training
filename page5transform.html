@@ -30,7 +30,7 @@
         <h1 class="header-title">Transform</h1>
       </div>
 
-      <audio controls>
+      <audio controls id="audioAnimals">
         <source
           src="/media/1698388525_klavdia-petrivna-mperatori.mp3"
           type="audio/mpeg"
@@ -41,62 +41,56 @@
 
     <main>
       <div class="container animals-container">
-        <h1 class="visually-hidden">Animals</h1>
-
         <ul class="animal-list">
-          <li class="animal-item one">
+          <li class="one" id="firstAnimal">
             <img
-              class="animal-image"
+              class="dog"
               src="./images/dog.png"
               alt="dog"
-              width="120"
-              height="120"
-            />
-          </li>
-          <li class="animal-item two">
-            <img
-              class="animal-image"
-              src="./images/jiraf.png"
-              alt="jiraf"
-              width="280"
-              height="280"
-            />
-          </li>
-          <li class="animal-item three">
-            <img
-              class="animal-image"
-              src="./images/tushkan.png"
-              alt="tushkan"
-              width="120"
-              height="120"
-            />
-          </li>
-          <li class="animal-item four">
-            <img
-              class="animal-image"
-              src="./images/crocodile.png"
-              alt="crocodile"
-              width="220"
-              height="220"
-            />
-          </li>
-          <li class="animal-item five">
-            <img
-              class="animal-image buterfly"
-              src="./images/buterfly.png"
-              alt="buterfly"
-              width="50"
-              height="50"
+              style="width: 120px; height: auto"
             />
           </li>
 
-          <li class="animal-item six">
+          <li class="two" id="secondAnimal">
             <img
-              class="animal-image cat"
+              class="jiraf"
+              src="./images/jiraf.png"
+              alt="jiraf"
+              style="width: 280px; height: auto"
+            />
+          </li>
+          <li class="three">
+            <img
+              class="tushkan"
+              src="./images/tushkan.png"
+              alt="tushkan"
+              style="width: 120px; height: auto"
+            />
+          </li>
+          <li class="four" id="fourAnimal">
+            <img
+              class="crocodile"
+              src="./images/crocodile.png"
+              alt="crocodile"
+              style="width: 200px; height: auto"
+            />
+          </li>
+
+          <li class="five">
+            <img
+              class="buterfly"
+              src="./images/buterfly.png"
+              alt="buterfly"
+              style="width: 50px; height: auto"
+            />
+          </li>
+
+          <li class="six">
+            <img
+              class="cat"
               src="./images/cat.png"
               alt="cat"
-              width="120"
-              height="120"
+              style="width: 150px; height: auto"
             />
           </li>
         </ul>
@@ -106,5 +100,23 @@
     <footer>
       <p><i>natalia.com</i></p>
     </footer>
+
+    <script>
+      function toggleVisibility() {
+        const secondAnimal = document.getElementById("secondAnimal");
+        const fourAnimal = document.getElementById("fourAnimal");
+        if (window.innerWidth >= 1000) {
+          secondAnimal.style.display = "block";
+          fourAnimal.style.display = "block";
+        } else {
+          secondAnimal.style.display = "none";
+          fourAnimal.style.display = "none";
+        }
+      }
+
+      toggleVisibility();
+      // Слухаємо зміни розміру вікна
+      window.addEventListener("resize", toggleVisibility);
+    </script>
   </body>
 </html>

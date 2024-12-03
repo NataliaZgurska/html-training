@@ -1,6 +1,7 @@
 .container {
   /* max-width: 1158px; */
   width: 100%;
+  min-height: 85vh;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -19,31 +20,27 @@
 
 /*-------Animals-------------*/
 
-.animals-container {
+/* .animals-container {
   position: relative;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+} */
 
 .animal-list {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-evenly;
-  min-height: 85vh;
+  min-height: 80vh;
 }
 
-.one {
+/* .animal-list li {
+  background-color: yellow;
+} */
+
+.one,
+.two,
+.three,
+.four,
+.five {
   transition: transform 400ms ease-in-out;
 }
 
@@ -54,34 +51,33 @@
 
 .two {
   margin-bottom: 50px;
-  transition: transform 1500ms ease-in-out;
 }
 .two:hover,
 .two:focus {
   transform: scale(150%, 150%);
 }
 
-.three {
+/* .three {
   margin-bottom: 50px;
   transition: transform 1500ms ease-in-out;
-}
+} */
 .three:hover,
 .three:focus {
   transform: scale(70%, 70%);
 }
 
-.four {
+/* .four {
   transition: transform 500ms ease-in-out;
-}
+} */
 .four:hover,
 .four:focus {
   transform: translate(180px, 20px);
 }
 
-.five {
+/* .five {
   padding-bottom: 110px;
   transition: transform 400ms linear;
-}
+} */
 .five:hover,
 .five:focus {
   transform: translateY(-400px);
@@ -89,7 +85,7 @@
 
 .six {
   position: relative;
-  width: 100px;
+  width: 152px;
   height: 80px;
   overflow: hidden;
 }
