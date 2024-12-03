@@ -1,0 +1,107 @@
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  color: bisque;
+  background-color: gray;
+  background-image: linear-gradient(
+      rgba(67, 47, 100, 0.4),
+      rgba(58, 46, 66, 0.3)
+    ),
+    url(../images/bg-forest.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+/*-------Animals-------------*/
+
+.animals-container {
+  position: relative;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.animal-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  min-height: 85vh;
+}
+
+.one {
+  transition: transform 400ms ease-in-out;
+}
+
+.one:hover,
+.one:focus {
+  transform: rotate(360deg);
+}
+
+.two {
+  margin-bottom: 50px;
+  transition: transform 1500ms ease-in-out;
+}
+.two:hover,
+.two:focus {
+  transform: scale(150%, 150%);
+}
+
+.three {
+  margin-bottom: 50px;
+  transition: transform 1500ms ease-in-out;
+}
+.three:hover,
+.three:focus {
+  transform: scale(70%, 70%);
+}
+
+.four {
+  transition: transform 500ms ease-in-out;
+}
+.four:hover,
+.four:focus {
+  transform: translate(180px, 20px);
+}
+
+.five {
+  padding-bottom: 110px;
+  transition: transform 400ms linear;
+}
+.five:hover,
+.five:focus {
+  transform: translateY(-400px);
+}
+
+.six {
+  position: relative;
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+}
+.cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(89%);
+  transition: transform 650ms linear;
+}
+
+.six:hover .cat {
+  transform: translateX(0);
+}

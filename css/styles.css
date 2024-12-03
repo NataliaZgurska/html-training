@@ -77,6 +77,14 @@ h3 {
   font-size: 4vw;
 }
 
+label,
+input,
+textarea,
+legend,
+select {
+  font-size: 4vw;
+}
+
 body {
   background-color: #d4ecff;
 }
@@ -144,6 +152,14 @@ section {
   h3 {
     font-size: 3vw;
   }
+
+  label,
+  input,
+  textarea,
+  legend,
+  select {
+    font-size: 3vw;
+  }
 }
 /********   tablet   *******/
 @media only screen and (min-width: 768px) {
@@ -157,6 +173,14 @@ section {
 
   p,
   h3 {
+    font-size: 2vw;
+  }
+
+  label,
+  input,
+  textarea,
+  legend,
+  select {
     font-size: 2vw;
   }
 
@@ -201,6 +225,14 @@ section {
 
   p,
   h3 {
+    font-size: 1.6vw;
+  }
+
+  label,
+  input,
+  textarea,
+  legend,
+  select {
     font-size: 1.6vw;
   }
 }

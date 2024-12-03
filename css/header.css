@@ -27,13 +27,17 @@ audio {
 
 .header-span {
   text-transform: uppercase;
+  /* color: #006400; */
+  /* color: #011a4d; */
+  color: purple;
 }
 .header-span:hover {
   color: yellow;
 }
 
 .header-title {
-  color: #2659b0;
+  /* color: #2659b0; */
+  color: blue;
 }
 
 .header-btn:hover {

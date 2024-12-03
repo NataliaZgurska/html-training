@@ -1,0 +1,20 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px;
+}
+
+.radioBtn label {
+  margin-right: 16px;
+}
+
+.formBtnContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+select {
+  width: 30%;
+}
