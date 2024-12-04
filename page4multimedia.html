@@ -39,16 +39,102 @@
     </header>
 
     <main>
-      <section></section>
-      <section><h2>Page1</h2></section>
+      <section class="asideDiv">
+        <aside>
+          <h3 style="float: left; padding-right: 12px">
+            Audio (control throw JS)
+          </h3>
+          <input id="playBtn" type="button" class="btn" value="Play" />
+
+          <!-- аудіо, яке не виводиться, але відтворюється -->
+          <audio id="audioElement">
+            <source src="/media/dity injeneriv.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur</p> -->
+        </aside>
+
+        <div class="asideDivMainText">
+          <h3 style="float: left; padding-right: 12px">Different formats</h3>
+          <audio controls>
+            <source
+              src="/media/zlata-ognevich-ptashka_1.ogg"
+              type="audio/ogg"
+            />
+            <source src="/media/zlata-ognevich-ptashka.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </section>
+
       <section>
-        <h3>Page4</h3>
-        <p>Page4</p>
+        <h3>Video</h3>
+        <video
+          controls
+          loop
+          poster="/media/video1Poster.jpg"
+          style="width: 30%; height: auto"
+        >
+          <source src="/media/Queen - We Are The Champions (Live).mp4" />
+        </video>
+      </section>
+
+      <section>
+        <h3>Video (control throw JS)</h3>
+        <p><i>To start the video, hover over it</i></p>
+        <video
+          id="video"
+          style="
+            width: 50%;
+            height: auto;
+            border: 2px solid gray;
+            cursor: pointer;
+          "
+          poster="/media/video2Poster.jpg"
+        >
+          <source src="/media/KLAVDIA PETRIVNA.mp4" />
+        </video>
       </section>
     </main>
 
     <footer>
       <p><i>natalia.com</i></p>
     </footer>
+
+    <script>
+      // Аудіо. по кліку на кнопку запускаємо функцію playSound
+      document.getElementById("playBtn").onclick = playSound;
+
+      function playSound() {
+        const music = document.getElementById("audioElement");
+        const playBtn = document.getElementById("playBtn");
+
+        if (music.paused) {
+          music.play();
+          playBtn.value = "Stop";
+        } else {
+          music.pause();
+          playBtn.value = "Play";
+        }
+      }
+
+      // Відео. Запускаємо відео при наведені курсора
+      // Коли відео завантажиться, запуститься функція
+      window.onload = function () {
+        const videoElem = document.getElementById("video");
+
+        // встановлюємо розмір елемента на сторінці
+        // videoElem.width = videoElem.videoWidth / 2;
+        // videoElem.height = videoElem.videoHeight / 2;
+
+        // Запускаємо відео при наведені курсора
+        videoElem.onmouseover = function () {
+          this.play();
+        };
+        videoElem.onmouseout = function () {
+          this.pause();
+        };
+      };
+    </script>
   </body>
 </html>

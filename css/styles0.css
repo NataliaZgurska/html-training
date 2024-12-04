@@ -83,23 +83,6 @@ summary {
 /* summary {
   font-size: 16px;
 } */
-/******* asideDiv ******/
-.asideDiv {
-  overflow: auto;
-}
-
-aside {
-  font-style: italic;
-  background-color: #8dd0f9;
-  border: 1px solid yellow;
-  border-radius: 4px;
-  padding: 10px;
-  margin: 10px;
-}
-.asideDivMainText {
-  color: darkslategray;
-  padding: 10px;
-}
 
 /********   tablet-500   *******/
 @media only screen and (min-width: 500px) {
@@ -109,15 +92,6 @@ aside {
   .div2 {
     width: 64%;
   }
-
-  aside {
-    width: 30%;
-    float: left;
-    border: 1px solid yellow;
-  }
-  /* .dropbtn {
-    font-size: 18px;
-  } */
 }
 
 /*********  desktop  ********/
