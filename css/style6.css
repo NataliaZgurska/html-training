@@ -1,0 +1,16 @@
+#source {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  color: black;
+  cursor: move;
+}
+
+#target {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: white;
+}
