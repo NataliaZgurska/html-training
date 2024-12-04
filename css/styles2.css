@@ -1,15 +1,27 @@
 /***** svg & Iframe *****/
 
 .iframeDiv {
-  margin-top: 10px;
-  border: 3px solid blue;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   border-radius: 4px;
-  padding: 10px;
-  background-color: white;
+  margin: 0 auto;
 }
 
 iframe {
   height: 200px;
   width: 100%;
-  border: none;
+  border: 3px solid blue;
+}
+
+/********   tablet   *******/
+@media only screen and (min-width: 768px) {
+  .iframeDiv {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  iframe {
+    width: 48%;
+  }
 }
