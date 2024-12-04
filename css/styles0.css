@@ -136,12 +136,11 @@ aside {
     min-width: 300px;
   }
   .dropbtn,
-  .linksListItem a,
-  summary {
-    font-size: 18px;
+  .linksListItem a p {
+    font-size: 22px;
   }
 
-  /* summary {
-    font-size: 20px;
-  } */
+  summary {
+    font-size: 24px;
+  }
 }
