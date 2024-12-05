@@ -59,7 +59,7 @@
               style="width: 280px; height: auto"
             />
           </li>
-          <li class="three">
+          <li class="three" id="thirdAnimal">
             <img
               class="tushkan"
               src="../images/tushkan.png"
@@ -76,7 +76,7 @@
             />
           </li>
 
-          <li class="five">
+          <li class="five" id="fifthAnimal">
             <img
               class="buterfly"
               src="../images/buterfly.png"
@@ -105,12 +105,21 @@
       function toggleVisibility() {
         const secondAnimal = document.getElementById("secondAnimal");
         const fourAnimal = document.getElementById("fourAnimal");
+        const thirdAnimal = document.getElementById("thirdAnimal");
+        const fifthAnimal = document.getElementById("fifthAnimal");
         if (window.innerWidth >= 1000) {
           secondAnimal.style.display = "block";
           fourAnimal.style.display = "block";
         } else {
           secondAnimal.style.display = "none";
           fourAnimal.style.display = "none";
+        }
+        if (window.innerWidth >= 500) {
+          thirdAnimal.style.display = "block";
+          fifthAnimal.style.display = "block";
+        } else {
+          thirdAnimal.style.display = "none";
+          fifthAnimal.style.display = "none";
         }
       }
 
