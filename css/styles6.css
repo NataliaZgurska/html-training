@@ -1,3 +1,11 @@
+.divsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
 #source {
   width: 150px;
   height: 150px;
@@ -5,14 +13,25 @@
   color: black;
   cursor: move;
   text-align: center;
+  padding-top: 20px;
 }
 
 #target {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
   background-color: blue;
   padding: 5px;
   margin-bottom: 5px;
   color: white;
   text-align: center;
+  padding-top: 20px;
+}
+
+/********   tablet   *******/
+@media only screen and (min-width: 500px) {
+  .divsContainer {
+    flex-direction: row;
+    gap: 40px;
+  }
 }

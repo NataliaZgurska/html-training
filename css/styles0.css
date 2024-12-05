@@ -109,9 +109,12 @@ summary {
   .dropdown-content {
     min-width: 300px;
   }
-  .dropbtn,
-  .linksListItem a p {
+  .dropbtn {
     font-size: 22px;
+  }
+
+  .linksListItem a p {
+    font-size: 28px;
   }
 
   summary {
