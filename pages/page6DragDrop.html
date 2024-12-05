@@ -41,13 +41,89 @@
 
     <main>
       <section>
-        <div id="source" draggable="true">Move this element</div>
-        <div id="target">to this region</div>
+        <div id="source" draggable="true"><p>Move this element</p></div>
+        <div id="target"><p>to this region</p></div>
       </section>
     </main>
 
     <footer>
       <p><i>natalia.com</i></p>
     </footer>
+
+    <script>
+      // dragstart, dragend (успішне і не успішне)
+      // dragenter - елемент який перетаскують потрапляє в область цільового елемента
+      // dragleave - елемент який перетаскують покидає область цільового елемента
+      // dragover - елемент який перетаскують знаходиться над цільовим елементом
+      // drop - перетаскування завершується відпусканням над цільовим елементом
+
+      window.onload = function () {
+        const source = document.getElementById("source");
+        const target = document.getElementById("target");
+        source.addEventListener(
+          "dragstart",
+          function (evt) {
+            this.style.border = "3px dotted #000";
+            evt.dataTransfer.effectAllowed = "move";
+            evt.dataTransfer.setData("Text", this.id);
+          },
+          false
+        );
+
+        // dragend - кінець операції drag (успішне і не успішне)
+        source.addEventListener(
+          "dragend",
+          function (evt) {
+            this.style.border = "";
+          },
+          false
+        );
+      };
+
+      // dragenter - елемент який перетаскують потрапляє в область цільового елемента
+      target.addEventListener(
+        "dragenter",
+        function (evt) {
+          this.style.border = "5px solid red";
+        },
+        false
+      );
+
+      // dragleave - елемент який перетаскують покидає область цільового елемента
+      target.addEventListener(
+        "dragleave",
+        function (evt) {
+          this.style.border = "";
+        },
+        false
+      );
+
+      // dragover - елемент який перетаскують знаходиться над цільовим елементом
+      target.addEventListener(
+        "dragover",
+        function (evt) {
+          //  відміняємо стандартний обробник подій
+          if (evt.preventDefault) evt.preventDefault();
+          return false;
+        },
+        false
+      );
+
+      // drop - перетаскування завершується відпусканням над цільовим елементом
+      target.addEventListener(
+        "drop",
+        function (evt) {
+          //  відміняємо стандартний обробник подій
+          if (evt.preventDefault) evt.preventDefault();
+          if (evt.stopPropagation) evt.stopPropagation();
+          this.style.border = "";
+          const id = evt.dataTransfer.getData("Text");
+          const elem = document.getElementById(id);
+          this.appendChild(elem);
+          return false;
+        },
+        false
+      );
+    </script>
   </body>
 </html>
