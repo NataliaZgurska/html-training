@@ -1,21 +1,67 @@
 table {
+  margin: 10px 10px 20px 10px;
+}
+
+.firstTable {
   border: 2px inset blue;
-  /* border-collapse: collapse; */
+  border-spacing: 10px;
   border-radius: 10px;
   width: 70%;
 }
 
-th,
-tr,
-td {
+.firstTable th,
+.firstTable tr,
+.firstTable td {
   border: 1px solid blue;
   border-radius: 10px;
 }
 
-.colon1 {
+.thColon1 {
   width: 75%;
 }
 
-.colon2 {
+.thColon2 {
   width: 25%;
+}
+
+.colon2,
+.thirdTable td {
+  text-align: center;
+}
+
+.secondTable,
+.thirdTable {
+  width: 70%;
+}
+.secondTable,
+.secondTable th,
+.secondTable td {
+  border: 2px solid green;
+  border-collapse: collapse;
+}
+
+.secondTable th {
+  text-align: left;
+  width: 25%;
+}
+
+.secondTable th,
+.secondTable td {
+  padding: 6px;
+}
+
+.secondTable th,
+.secondTable td:nth-child(odd) {
+  background-color: #bcdcf6;
+}
+
+.thirdTable,
+.thirdTable th,
+.thirdTable td {
+  border: 2px dotted rgb(35, 12, 237);
+  border-collapse: collapse;
+}
+
+.thirdTable tr:nth-child(even) {
+  background-color: #d7ebf8;
 }
