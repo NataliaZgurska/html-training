@@ -1,0 +1,21 @@
+table {
+  border: 2px inset blue;
+  /* border-collapse: collapse; */
+  border-radius: 10px;
+  width: 70%;
+}
+
+th,
+tr,
+td {
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+.colon1 {
+  width: 75%;
+}
+
+.colon2 {
+  width: 25%;
+}
