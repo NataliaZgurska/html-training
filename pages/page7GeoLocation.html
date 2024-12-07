@@ -49,13 +49,14 @@
           </tr>
           <tr>
             <td><p>Latitude (широта)</p></td>
-            <td class="colon2"><p id="latitude">10</p></td>
+            <td class="colon2"><p id="latitude"></p></td>
           </tr>
           <tr>
             <td><p>Longitude (довгота)</p></td>
-            <td class="colon2"><p id="longitude">10</p></td>
+            <td class="colon2"><p id="longitude"></p></td>
           </tr>
         </table>
+        <p id="status"></p>
       </section>
 
       <section class="Table2">
@@ -154,5 +155,39 @@
     <footer>
       <p><i>natalia.com</i></p>
     </footer>
+
+    <script>
+      // отримання даних геолокації
+      // updateLocation - функція, яка запуститься після отримання данних про геолокацію
+      // handleError - функція, яка запуститься якщо є помилка в отриманні даних про геолокацію
+      navigator.geolocation.getCurrentPosition(updateLocation, handleError);
+
+      function updateLocation(position) {
+        const $ = function (selector) {
+          return document.getElementById(selector);
+        };
+
+        $("latitude").innerHTML = position.coords.latitude;
+        $("longitude").innerHTML = position.coords.longitude;
+      }
+
+      function handleError(error) {
+        switch (error.code) {
+          case 0:
+            updateStatus("Виникла помилка: " + error.message);
+            break;
+          case 1:
+            updateStatus("Користувач заборонив отримання даних про геолокацію");
+            break;
+          case 2:
+            updateStatus("Час очікування закінчився");
+            break;
+        }
+      }
+
+      function updateStatus(message) {
+        document.getElementById("status").innerHTML = message;
+      }
+    </script>
   </body>
 </html>
